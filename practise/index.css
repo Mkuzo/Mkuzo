@@ -1,0 +1,38 @@
+.background-container{
+    width: 80%;
+    height:auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    gap:20px;
+    flex-wrap: wrap;
+}
+.gradient1{
+    width: 280px;
+    height: 280px;
+    background: radial-gradient(circle ,white,darkblue,black);   
+}
+.gradient2{
+    width:280px;
+    height:280px;
+    margin-top: 20px;
+    background: linear-gradient(48deg,red,blue,green);
+}
+.gradient3{
+    width: 280px;
+    height: 280px;
+    background: radial-gradient(ellipse, red,yellow,purple);
+    margin-top: 20px;
+}
+.gradient4{
+    width:280px;
+    height:280px;
+    background:linear-gradient(to left,red,blue,green);
+    margin-top: 20px;
+}
+.gradient5{
+    width:280px;
+    height:280px;
+    background:linear-gradient(to right,red,blue,yellow);
+}
