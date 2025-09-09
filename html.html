@@ -39,9 +39,16 @@
         <button id="button">Click</button>
     </div> -->
     <div class="holder">
-        <h1>Introduction to javascript</h1>
-        <div class="buttonContainer">
-            <button>Click</button>
+        <h1 id="head">Introduction to javascript</h1>
+        <div class="buttonContainer" id="textHolder">
+            <div class="score">
+                 <button id="button" onclick="addPointA()">Click</button>
+                <p id="teamAParagraph">0</p>
+                </div>
+            <div class="score2">
+                <button onclick="addpointB()">Click</button>
+                <p id="teamBParagraph">0</p>
+            </div>
         </div>
     </div>
     <script>
@@ -50,6 +57,32 @@
         // button.addEventListener("click",()=>{
         //     div.style.backgroundColor = "blue";
         // })   
+        const btn = document.getElementById("button");
+        const textHolder = document.getElementById("textHolder");
+        const head = document.getElementById("head");
+        const teamAParagraph= document.getElementById("teamAParagraph");
+        const teamBParagraph= document.getElementById("teamBParagraph"); 
+        btn.addEventListener("click",()=>{
+            textHolder.style.backgroundColor = "blue";
+            head.textContent = "Heelo";
+        });
+
+        // function greetings(){
+        //     const greetings = "Good Morning";
+        //     alert(greetings);
+        // }     
+        let teamA = 0;
+        let teamB = 0;
+        function addPointA(){
+            teamA ++;
+            teamAParagraph.textContent = teamA;
+            console.log(teamA);
+        }
+        function addpointB(){
+            teamB ++;
+            teamBParagraph.textContent = teamB;
+            console.log(teamB);
+        }
     </script>
 </body>
 </html>
