@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="buyCandy()">Buy Candy(10)</button>
+    <button onclick="buyToy()">Buy Toy(30)</button>
+    <p id="paragraph"></p>
+    <script>
+        const money = 100;
+        const paragraph = document.getElementById("paragraph");
+        function buyItem(cost){
+           const newValue = money-cost;
+           console.log(newValue);
+           paragraph.innerHTML = newValue;
+        } 
+        function buyCandy(){
+         buyItem(10);
+        }
+        function buyToy(){
+            buyItem(30);
+        }
+    </script>
+</body>
+</html>
