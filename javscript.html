@@ -6,22 +6,49 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="buyCandy()">Buy Candy(10)</button>
-    <button onclick="buyToy()">Buy Toy(30)</button>
+    <button onclick="deposit()">Deposit 50</button>
+    <button onclick="withdarw()">With Draw(30)</button>
     <p id="paragraph"></p>
     <script>
-        const money = 100;
-        const paragraph = document.getElementById("paragraph");
-        function buyItem(cost){
-           const newValue = money-cost;
-           console.log(newValue);
-           paragraph.innerHTML = newValue;
-        } 
-        function buyCandy(){
-         buyItem(10);
+        // let money = 100;
+        // const paragraph = document.getElementById("paragraph");
+        // function buyItem(cost){
+        //    const newValue = money-cost;
+        //    money = newValue;
+        //    console.log(newValue);
+        //    paragraph.innerHTML = money;
+        // } 
+        // function buyCandy(){
+        //  buyItem(10);
+        // }
+        // function buyToy(){
+        //     buyItem(30);
+        // }
+        // let saving = 0;
+        // const paragraph = document.getElementById("paragraph");
+        // function addMoney(savings){
+        //     const savingValue = saving + savings;
+        //     saving = savingValue;
+        //     console.log(savingValue);
+        //     paragraph.innerHTML = saving;
+        // }
+        // function saving1(){
+        //     addMoney(10);
+        // }
+        // function saving2(){
+        //     addMoney(20);
+        // }
+        let pocketMoney = 200;
+        const paragraph = document.getElementById("paragraph")
+        function deposit(){
+            const newValue = pocketMoney + 50;
+            pocketMoney = newValue;
+            paragraph.innerHTML = pocketMoney;
         }
-        function buyToy(){
-            buyItem(30);
+        function withdarw(){
+           const newValue = pocketMoney - 30;
+           pocketMoney = newValue;
+           paragraph.innerHTML = pocketMoney;
         }
     </script>
 </body>

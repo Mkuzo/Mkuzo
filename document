@@ -1,0 +1,43 @@
+Area of Rectangle
+Make a new HTML file.
+
+
+Ask the user to enter length and width.
+
+
+Create a function to calculate area = length × width.
+
+
+Add a button “Find Area”.
+
+
+Show the area inside a <p>.
+Circumference of Circle
+Make a new HTML file.
+
+
+Ask the user to enter the radius of a circle.
+
+
+Store π (pi) as 3.14 in a variable.
+
+
+Create a function circumference = 2 × π × radius.
+
+
+Show the result when a button is clicked.
+ Division Calculator
+Make a new HTML file.
+
+
+Ask the user to enter two numbers.
+
+
+Create a function to divide the first number by the second.
+
+
+Show the answer.
+
+
+If the second number is 0, show a message “Cannot divide by zero!”.
+

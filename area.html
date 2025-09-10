@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="findArea()">Find Area</button>
+    <input type="number" placeholder="Enter Length" id="input1">
+    <input type="number" placeholder="Enter Width" id="input2">
+    <p id="result" ></p>
+    <script>
+       function findArea(){
+        let input1 = document.getElementById("input1").value;
+        let input2 = document.getElementById("input2").value;
+        let area = input1 * input2;
+        document.getElementById("result").innerText = "Area = " + area;
+       }
+       function find(){
+        let input = document.getElementById("input").value;
+        let pi = 3.14;
+        let Circumfrence = 2 * 3.14 * input;
+        document.getElementById("output").innerText = "Circumfrence = " + Circumfrence;
+       }
+      function divide(){
+        let divide1 = document.getElementById("divide1").value;
+        let divide2 = document.getElementById("divide2").value;
+         // convert to numbers
+        divide1 = parseFloat(divide1);
+        divide2 = parseFloat(divide2);
+        if(divide2 === 0){
+         document.getElementById("divide").innerText = "Cannot Divide by zero!";  
+        }else{
+            let divide = divide1/divide2; 
+            document.getElementById("divide").innerText = "divide = " + divide;  
+        }
+    }
+      
+     </script>
+     <button onclick="find()">Find Circumfrence</button>
+    <input type="number" placeholder="Enter Radius" id="input">
+    <p id="output"></p>
+
+    <button onclick="divide()">Divide</button>
+    <input type="number" placeholder="Enter number" id="divide1">
+    <input type="number" placeholder="Enter number" id="divide2">
+    <p id="divide"></p>
+</body>
+</html>
